@@ -1,0 +1,22 @@
+<div class="skills-section text-center py-8">
+  <h2 class="text-5xl font-bold text-warning mb-2">Skills</h2>
+  <p class="text-lg text-white opacity-80 mb-6">
+    My technical toolkit ⚙️
+  </p>
+
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <div *ngFor="let skill of duplicatedSkills" class="skill-item">
+        <div class="skill-icon" [style.color]="skill.color">
+          <ng-container *ngIf="skill.icon; else customIcon">
+            <i [class]="skill.icon"></i>
+          </ng-container>
+          <ng-template #customIcon>
+            <img [src]="skill.image" [alt]="skill.name" />
+          </ng-template>
+        </div>
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+  </div>
+</div>

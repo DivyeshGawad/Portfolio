@@ -1,0 +1,65 @@
+.contact-section {
+  /* background: linear-gradient(135deg, #f5f7fa, #e6ecf5); */
+  
+   background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), 
+    url('https://t4.ftcdn.net/jpg/08/14/54/71/360_F_814547144_an4xSu5K7CVQM1oAukpYURr3h3fUqeql.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.custom-input {
+  border-radius: 0.5rem !important;
+  padding: 0.5rem !important;
+}
+
+.p-button {
+  border-radius: 1rem !important;
+  font-weight: 600;
+}
+
+.icn{
+  color: #27d227;
+}
+
+.icon-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.contact-info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f9fafb;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.social-btn {
+  color: #27d227;
+}
+
+.social-btn :hover{
+   transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.custom-border{
+  border: 1px dotted #f0d942;
+  background: rgba(255, 255, 255, 0.08);
+}

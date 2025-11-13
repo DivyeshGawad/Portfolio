@@ -1,0 +1,45 @@
+<div class="hero-section surface-0 text-white flex flex-column align-items-center justify-content-center relative">
+  <!-- Background shapes -->
+  <!-- <div class="hero-bg">
+    <span class="circle circle1"></span>
+    <span class="circle circle2"></span>
+    <span class="circle circle3"></span>
+  </div> -->
+
+  <div class="container py-6 z-10 text-center">
+    <h1 class="text-5xl font-bold mb-4 animate-fadein">
+      Hi, I'm <span class="text-warning">Divyesh Gawad</span>
+    </h1>
+
+    <p class="text-2xl mb-3 animate-slideup">
+      A passionate <span class="font-semibold">Full-Stack Developer</span> crafting scalable web apps 🚀
+    </p>
+
+    <!-- Typing Effect -->
+    <p class="text-xl mb-5 animate-slideup-delayed">
+      Working with <span class="typed-skill text-warning">{{ displayedSkill }}</span><span class="cursor">|</span>
+    </p>
+
+    <div class="flex justify-content-center gap-3 mt-6 animate-fadein-delayed">
+      <button
+        pButton
+        type="button"
+        label="View Projects"
+        class="p-button-rounded p-button-primary px-6 py-3"
+        routerLink="/"
+        fragment="projects"
+        aria-label="View my projects"
+      ></button>
+
+      <button
+        pButton
+        type="button"
+        label="Contact Me"
+        class="p-button-rounded p-button-outlined px-6 py-3"
+        routerLink="/"
+        fragment="contacts"
+        aria-label="Contact me"
+      ></button>
+    </div>
+  </div>
+</div>

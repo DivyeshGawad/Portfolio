@@ -1,0 +1,104 @@
+/* FontAwesome Icons Styling */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.skills-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url('https://t4.ftcdn.net/jpg/08/14/54/71/360_F_814547144_an4xSu5K7CVQM1oAukpYURr3h3fUqeql.jpg')
+      no-repeat center center / cover;
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 4rem;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 6rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.skill-item {
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.skill-icon {
+  font-size: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 2rem;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 20px #f0d942);
+}
+
+.skill-item:hover .skill-icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skill-item p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel {
+    gap: 3rem;
+    animation-duration: 35s;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill-item p {
+    font-size: 0.9rem;
+  }
+}
+
+.skill-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover img {
+  transform: scale(1.15);
+}
