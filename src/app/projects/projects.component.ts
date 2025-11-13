@@ -27,7 +27,7 @@ export class ProjectsComponent {
       title: 'Portfolio Website',
       shortDesc: 'A modern, responsive portfolio website built using Angular, PrimeNG, and Tailwind showcasing my projects, skills, and contact info.',
       image: 'https://img.freepik.com/free-vector/programming-concept-illustration_114360-1671.jpg?w=740&t=st=1730970940~exp=1730974540~hmac=50f49ea76a6928cf76b3b58c983fef2bcb14dc8ea0e3311da5da390a0da4d059',
-      link: 'https://yourportfolio.com'
+      link: 'https://github.com/DivyeshGawad/Portfolio'
     },
     {
       title: 'Garbage Management System',
