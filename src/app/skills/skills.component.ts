@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
- skills = [
+skills = [
   // 🧠 Core Programming
   { name: 'Java', icon: 'fa-brands fa-java', color: '#f89820' },
   { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#f7df1e' },
@@ -24,7 +24,8 @@ export class SkillsComponent implements OnInit {
   { name: 'PrimeFlex', image: 'assets/icons/PrimeFlex.png', color: '#80deea' },
 
   // ⚙️ Backend
-  { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
+  { name: 'Spring', icon: 'fa-solid fa-leaf', color: '#6db33f' },
+  { name: 'Spring Boot', image: 'assets/icons/SpringBoot.png', color: '#6db33f' },
   { name: 'Hibernate', image: 'assets/icons/Hibernate.png', color: '#59666C' },
   { name: 'REST API', image: 'assets/icons/API.png', color: '#00bcd4' },
 
@@ -36,10 +37,14 @@ export class SkillsComponent implements OnInit {
   { name: 'Git', icon: 'fa-brands fa-git-alt', color: '#f1502f' },
   { name: 'GitHub', icon: 'fa-brands fa-github', color: '#fff' },
   { name: 'Docker', icon: 'fa-brands fa-docker', color: '#0db7ed' },
+  { name: 'VS Code', image: 'assets/icons/VSCode.png', color: '#007ACC' },
+  { name: 'Eclipse', image: 'assets/icons/Eclipse.png', color: '#2C2255' },
+  { name: 'Postman', image: 'assets/icons/Postman.png', color: '#FF6C37' },
 
   // ☁️ Cloud
   { name: 'AWS S3', icon: 'fa-brands fa-aws', color: '#ff9900' },
 ];
+
 
 
   duplicatedSkills: any[] = [];
