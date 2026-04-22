@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
-  skills: string[] = ['Angular', 'Spring Boot', 'MongoDB', 'AWS', 'Docker'];
+  skills: string[] = ['Angular', 'Spring Boot', 'MySQL' ,'MongoDB', 'Azure' ,'AWS', 'Docker'];
   displayedSkill = '';
   private skillIndex = 0;
   private charIndex = 0;
